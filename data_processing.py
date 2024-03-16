@@ -4,6 +4,8 @@ import gzip
 import input
 from io import BytesIO
 
+# Je sens qu'il va finir par devoir faire un gitignore parce que je télécharge masse trucs dans data là
+
 def download_and_unzip_data(start_year, end_year):
     base_url = "http://data.cquest.org/meteo-france/synop/synop.{}.csv.gz"
     os.makedirs('data', exist_ok=True)  # Ensure the 'data' directory exists
